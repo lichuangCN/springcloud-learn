@@ -4,8 +4,8 @@
 
 ### 第一部分 注册中心 Eureka
 对应作者的博客链接：https://juejin.im/post/5d78cd53f265da03d55e8351
-模块结构：
 
+模块结构：
 ```
 springcloud-learn
 ├── eureka-server -- eureka注册中心
@@ -13,3 +13,13 @@ springcloud-learn
 └── eureka-client -- eureka客户端
 ```
 
+### 第二部分 负载均衡 Robbin
+对应作者的博客链接：https://juejin.im/post/5d7f9006f265da03951a260c#heading-20
+
+模块结构：
+```
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── user-service -- 提供User对象CRUD接口的服务
+└── ribbon-service -- ribbon服务调用测试服务
+```
