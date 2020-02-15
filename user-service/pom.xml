@@ -11,7 +11,7 @@
     <groupId>site.muzhi</groupId>
     <artifactId>user-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-client</name>
+    <name>user-service</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
