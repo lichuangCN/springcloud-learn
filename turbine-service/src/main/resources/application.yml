@@ -10,7 +10,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8001/eureka/
 turbine:
-  app-config: hystrix-service #Ö¸¶¨ĞèÒªÊÕ¼¯ĞÅÏ¢µÄ·şÎñÃû³Æ
-  cluster-name-expression: new String('default') #Ö¸¶¨·şÎñËùÊô¼¯Èº
-  combine-host-port: true #ÒÔÖ÷»úÃûºÍ¶Ë¿ÚºÅÀ´Çø·Ö·şÎñ
+  app-config: hystrix-service #æŒ‡å®šéœ€è¦æ”¶é›†ä¿¡æ¯çš„æœåŠ¡åç§°
+  cluster-name-expression: new String('default') #æŒ‡å®šæœåŠ¡æ‰€å±é›†ç¾¤
+  combine-host-port: true #ä»¥ä¸»æœºåå’Œç«¯å£å·æ¥åŒºåˆ†æœåŠ¡
 
