@@ -26,13 +26,31 @@ springcloud-learn
 
 ### 第三部分 服务容错保护 Hystrix
 对应作者的博客链接：https://juejin.im/post/5d822d27e51d45621479ad92
-其他参考：https://www.cnblogs.com/hellxz/p/9056806.html
-https://www.cnblogs.com/hellxz/p/9071163.html
+
+其他参考：
+1. https://www.cnblogs.com/hellxz/p/9056806.html
+2. https://www.cnblogs.com/hellxz/p/9071163.html
 
 模块结构：
 ```
-springcloud-learning
+springcloud-learn
 ├── eureka-server -- eureka注册中心
 ├── user-service -- 提供User对象CRUD接口的服务
 └── hystrix-service -- hystrix服务调用测试服务
+```
+
+### 第四部分 断路器执行监控 Hystrix Dashboard
+对应作者的博客链接：https://juejin.im/post/5d88cb58f265da03e4679eff
+
+其他参考：
+1. https://www.cnblogs.com/hellxz/p/9100224.html
+
+模块结构：
+```
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── user-service -- 提供User对象CRUD接口的服务
+├── hystrix-service -- hystrix服务调用测试服务
+├── turbine-service -- 聚合收集hystrix实例监控信息的服务
+└── hystrix-dashboard -- 展示hystrix实例监控信息的仪表盘
 ```
