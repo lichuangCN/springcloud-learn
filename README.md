@@ -6,7 +6,7 @@
 对应作者的博客链接：https://juejin.im/post/5d78cd53f265da03d55e8351
 
 模块结构：
-```
+```lua
 springcloud-learn
 ├── eureka-server -- eureka注册中心
 ├── eureka-security-server -- 带登录认证的eureka注册中心
@@ -17,8 +17,8 @@ springcloud-learn
 对应作者的博客链接：https://juejin.im/post/5d7f9006f265da03951a260c
 
 模块结构：
-```
-springcloud-learn
+```lua
+springcloud-learnlua
 ├── eureka-server -- eureka注册中心
 ├── user-service -- 提供User对象CRUD接口的服务
 └── ribbon-service -- ribbon服务调用测试服务
@@ -32,7 +32,7 @@ springcloud-learn
 2. https://www.cnblogs.com/hellxz/p/9071163.html
 
 模块结构：
-```
+```lua
 springcloud-learn
 ├── eureka-server -- eureka注册中心
 ├── user-service -- 提供User对象CRUD接口的服务
@@ -46,11 +46,26 @@ springcloud-learn
 1. https://www.cnblogs.com/hellxz/p/9100224.html
 
 模块结构：
-```
+```lua
 springcloud-learn
 ├── eureka-server -- eureka注册中心
 ├── user-service -- 提供User对象CRUD接口的服务
 ├── hystrix-service -- hystrix服务调用测试服务
 ├── turbine-service -- 聚合收集hystrix实例监控信息的服务
 └── hystrix-dashboard -- 展示hystrix实例监控信息的仪表盘
+```
+
+### 第五部分 基于Ribbon和Hystrix的声明式服务调用 Feign
+对应作者的博客链接：https://juejin.im/post/5d9c85c3e51d45782c23fab6
+
+其他参考：
+1. https://www.cnblogs.com/hellxz/p/9201608.html
+2. https://www.cnblogs.com/hellxz/p/9206785.html
+
+模块结构：
+```lua
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── user-service -- 提供User对象CRUD接口的服务
+└── feign-service -- feign服务调用测试服务
 ```

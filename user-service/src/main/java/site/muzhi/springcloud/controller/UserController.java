@@ -31,14 +31,14 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public CommonResult<User> getUser(@PathVariable Long id) {
+    public CommonResult<User> queryById(@PathVariable Long id) {
         User user = userService.query(id);
         LOGGER.info("根据id获取用户信息，用户名称为：{}", user.getUsername());
         return new CommonResult<>(user);
     }
 
     @GetMapping("/list")
-    public CommonResult<List<User>> getUserByIds(@RequestParam String ids) {
+    public CommonResult<List<User>> listByIds(@RequestParam String ids) {
         String[] idsStr = ids.split(",");
         List<Long> idList = new ArrayList<>(16);
         for (String id : idsStr) {
@@ -50,7 +50,7 @@ public class UserController {
     }
 
     @GetMapping("/username")
-    public CommonResult<User> getByUsername(@RequestParam String username) {
+    public CommonResult<User> queryByUsername(@RequestParam String username) {
         User user = userService.getByUsername(username);
         return new CommonResult<>(user);
     }
