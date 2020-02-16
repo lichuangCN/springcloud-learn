@@ -8,6 +8,7 @@ import site.muzhi.springcloud.domain.CommonResult;
 import site.muzhi.springcloud.domain.User;
 import site.muzhi.springcloud.service.IUserService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -37,8 +38,13 @@ public class UserController {
     }
 
     @GetMapping("/list")
-    public CommonResult<List<User>> getUserByIds(@RequestParam List<Long> ids) {
-        List<User> userList = userService.queryUserByIds(ids);
+    public CommonResult<List<User>> getUserByIds(@RequestParam String ids) {
+        String[] idsStr = ids.split(",");
+        List<Long> idList = new ArrayList<>(16);
+        for (String id : idsStr) {
+            idList.add(Long.valueOf(id));
+        }
+        List<User> userList = userService.queryUserByIds(idList);
         LOGGER.info("根据ids获取用户信息，用户列表为：{}", userList);
         return new CommonResult<>(userList);
     }
