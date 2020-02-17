@@ -69,3 +69,18 @@ springcloud-learn
 ├── user-service -- 提供User对象CRUD接口的服务
 └── feign-service -- feign服务调用测试服务
 ```
+
+### 第六部分 API网关服务 Zuul
+对应作者的博客链接：https://juejin.im/post/5d9f2dea6fb9a04e3e724067
+
+其他参考：
+1. https://www.cnblogs.com/hellxz/p/9282756.html
+
+模块结构：
+```lua
+springcloud-learning
+├── eureka-server -- eureka注册中心
+├── user-service -- 提供User对象CRUD接口的服务
+├── feign-service -- feign服务调用测试服务
+└── zuul-proxy -- zuul作为网关的测试服务
+```
