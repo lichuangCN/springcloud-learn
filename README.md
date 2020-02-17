@@ -107,3 +107,14 @@ springcloud-learn
 ├── config-server -- 配置中心服务
 └── config-client -- 获取配置的客户端服务
 ```
+
+### 第九部分 分布式请求链路跟踪 Sleuth
+对应作者的博客链接：https://juejin.im/post/5dadb4d36fb9a04e02409a7d
+
+模块结构：
+```lua
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── user-service -- 提供User对象CRUD接口的服务
+└── ribbon-service -- ribbon服务调用测试服务
+```

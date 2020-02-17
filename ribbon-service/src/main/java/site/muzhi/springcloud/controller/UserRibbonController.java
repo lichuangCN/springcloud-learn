@@ -27,6 +27,11 @@ public class UserRibbonController {
         return restTemplate.getForObject(serviceUrl + "/user/{1}", CommonResult.class, id);
     }
 
+    @GetMapping("/list")
+    public CommonResult listByIds(@RequestParam String ids) {
+        return restTemplate.getForObject(serviceUrl + "/user/list?ids={1}", CommonResult.class, ids);
+    }
+
     @GetMapping("/username")
     public CommonResult getEntityByUsername(@RequestParam String username) {
         ResponseEntity<CommonResult> entity = restTemplate.getForEntity(serviceUrl + "/user/queryByUsername?username={1}", CommonResult.class, username);
