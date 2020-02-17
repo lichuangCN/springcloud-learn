@@ -78,9 +78,21 @@ springcloud-learn
 
 模块结构：
 ```lua
-springcloud-learning
+springcloud-learn
 ├── eureka-server -- eureka注册中心
 ├── user-service -- 提供User对象CRUD接口的服务
 ├── feign-service -- feign服务调用测试服务
 └── zuul-proxy -- zuul作为网关的测试服务
+```
+
+### 第七部分 外部集中化配置管理 Config
+对应作者的博客链接：https://juejin.im/post/5da4709af265da5baa5b06ac
+
+模块结构：
+```lua
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── config-server -- 配置中心服务
+├── config-security-server -- 带安全认证的配置中心服务
+└── config-client -- 获取配置的客户端服务
 ```
