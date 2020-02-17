@@ -96,3 +96,14 @@ springcloud-learn
 ├── config-security-server -- 带安全认证的配置中心服务
 └── config-client -- 获取配置的客户端服务
 ```
+
+### 第八部分 消息总线 Bus
+对应作者的博客链接：https://juejin.im/post/5da70d1351882509615bea34
+
+模块结构：
+```lua
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── config-server -- 配置中心服务
+└── config-client -- 获取配置的客户端服务
+```
