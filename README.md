@@ -118,3 +118,14 @@ springcloud-learn
 ├── user-service -- 提供User对象CRUD接口的服务
 └── ribbon-service -- ribbon服务调用测试服务
 ```
+
+### 第十部分 新一代API网关服务 Gateway
+对应作者的博客链接：https://juejin.im/post/5db6eed6518825644076d0b6
+
+模块结构：
+```lua
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── user-service -- 提供User对象CRUD接口的服务
+└── api-gateway -- gateway作为网关的测试服务
+```
