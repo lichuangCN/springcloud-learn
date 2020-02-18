@@ -129,3 +129,15 @@ springcloud-learn
 ├── user-service -- 提供User对象CRUD接口的服务
 └── api-gateway -- gateway作为网关的测试服务
 ```
+
+### 第十一部分 微服务应用监控 Admin
+对应作者的博客链接：https://juejin.im/post/5db98a2d518825649c730f81
+
+模块结构：
+```lua
+springcloud-learn
+├── eureka-server -- eureka注册中心
+├── admin-server -- admin监控中心服务
+├── admin-client -- admin监控中心监控的应用服务
+└── admin-security-server -- 带登录认证的admin监控中心服务
+```
