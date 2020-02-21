@@ -8,8 +8,8 @@ spring:
       server:
         git: #配置存储配置信息的Git仓库
           uri: https://github.com/lichuangCN/springcloud-config.git
-          username: lichuangCN
-          password: 150github
+          username: # git账号
+          password: # git密码
           clone-on-start: true #开启启动时直接从git获取配置
           # 遗留问题：此处无法加载config文件夹下的配置文件
           search-paths: '{application}' #application占位符，表示对于不同的应用，我们从对应应用名称的子目录中搜索配置
